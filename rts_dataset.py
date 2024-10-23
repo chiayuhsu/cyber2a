@@ -82,7 +82,7 @@ class MultiModalDataset(Dataset):
         if split == "train":
             self.img_list = data_split["train"]
         elif split == "valtest":
-            self.img_list = data_split["val_test"]
+            self.img_list = data_split["valtest"]
         else:
             raise ValueError("Invalid split: choose either 'train' or 'valtest'")
 
